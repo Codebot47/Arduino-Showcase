@@ -92,7 +92,7 @@
       <h2>Dice Circuit</h2>
       <iframe width="1233" height="695" src="https://www.youtube.com/embed/fmfETVHsVHA" title="Dice Circuit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p>
-        This project simulates an electronic dice using 6 LEDs and a pushbutton. When the button is pressed, a random number between 1 and 6 is generated using the `random()` function, and the corresponding number of LEDs lights up. It’s a fun way to combine randomness with physical output and great for beginner Arduino users.
+        This circuit uses seven 220 ohm resistors, one 10K ohm resistor, six red LEDs, a pushbutton, and an arduino. The way the circuit works is that when you press the pushbutton, it sends a current to the arduino. When the arduino recieves that current, the code makes it generate a random number, and light a certain amount of LEDs based on that number. What was tricky about this circuit is that I needed to add a 10K ohm resistor for the pushbutton. This was so that the arduino wasn't getting any current that signaled it to turn on a random number of LEDs when the pushbutton wasn't pressed. Its purpose was to just eliminate any external current that wasn't supposed to be there.
       </p>
       <h3>Code</h3>
       <a href="https://github.com/Codebot47/Arduino-Showcase/blob/main/sketch_jun21a_copy_20250621152712/sketch_jun21a_copy_20250621152712.ino" target="_blank">Click Here To View Code</a>
