@@ -15,7 +15,7 @@ void loop() {
     delay(10);
   }
 
-  delay(2000); // red for 3 seconds
+  delay(2000);
 
   for (int value = 254; value >= 0; value-=2) {
     analogWrite(11, value);
